@@ -16,10 +16,12 @@ path_to_runSPP=/path_to_runSPP.R    ## Path to phantompeakqualtools directory th
 export PATH=$PATH:$path_to_runSPP
 
 maindir=/path_to_H3K4me3Analysis
-download_meta=$maindir/metadata_ChipSeq_27Feb2017.csv
-ChipSeqHistonMetafile=$maindir/metadata_ChipSeq_27Feb2017all-matchingcontrols.csv
+download_meta=$maindir/metadata_ChipSeq_27Feb2017.csv          # metadata downloaded from ENCODE on 27Feb2017
+     
+# For each ENCODE experiment ID, the metadata file is parsed and the treatment H3K4me3 sample is assigned to the control sample 
+ChipSeqHistonMetafile=$maindir/metadata_ChipSeq_27Feb2017all-matchingcontrols.csv 
 
-reference=/path_to_ref/GRCh38.primary_assembly.genome.fa
+reference=/path_to_ref/GRCh38.primary_assembly.genome.fa       # Hg38 version v25 reference genome
 annotation=/path_to_ref/gencode.v25.annotation.gtf
 
 
