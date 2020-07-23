@@ -11,7 +11,7 @@ Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are
 5. Use MACS2 peak caller with broad parameter to generate broad H3K4me3 profiles.
 6. Annotate the ChIP-seq peak to the nearest Ensemble transcripts.
 
-##### list of softwares
+##### List of softwares
 samtools  
 bwa  
 run_spp.R (https://github.com/kundajelab/phantompeakqualtools)  
@@ -50,7 +50,7 @@ done
 
 
 #### II. celltype_specific_H3K4me3profile.R  
-Combines H3K4me3 profiles from different samples to generate cell-type H3K4me3 profile at the specified q-value filter.  
+Combines H3K4me3 profiles from different samples to generate cell-type H3K4me3 profile at the specified ChIP-seq q-value filter.  
 
 
 
