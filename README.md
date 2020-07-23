@@ -1,4 +1,4 @@
-Non proprietary codes used in this study
+## Non proprietary codes used in this study
 
 
 #### I. generateH3K4me3prolifes_ENCODE.py: Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are:  
@@ -38,5 +38,7 @@ done
 ```
 
 
-#### II. generateH3K4me3prolifes_ENCODE.py:
+#### II. celltype_specific_H3K4me3profile.R : Combines H3K4me3 profiles from different samples to generate cell-type H3K4me3 profile at the specified q-value filter.  
+
+
 
