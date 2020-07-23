@@ -1,12 +1,13 @@
-# Scripts to generate H3K4me3 peak profiles from ENCODE bam files  
+Non proprietary codes used in this study
 
 
-1. Create analysis directory
-2. Check the number of Control files and set parameters for MACS2
-3. Check if the control sample is already mapped to hg38 genome orelse remap the bam files to hg38
-4. Check if Experiment sample Bam derived is from Single or paired and Remap to hg38 v25
-5. MACS2 peak caller: Broad or narrow
-6. Annotate the peak to the nearest Ensemble transcripts
+#### I. generateH3K4me3prolifes_ENCODE.py: Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are:  
+1. Create analysis directory for each ENCODE experiment ID
+2. Check the presence of control ChIP-seq for the H3K4me3 ChIP-seq files. Set parameters for MACS2 peak calling software according to the control ChIP-seq information.
+3. Check if the control sample is already mapped to hg38 genome orelse remap the control bam files to hg38 genome.
+4. Check if H3K4me3 treatment sample bam file is derived from a single-end or paired-end sequencing and remap the bam file to hg38 genome.
+5. Use MACS2 peak caller with broad parameter to generate broad H3K4me3 profiles.
+6. Annotate the ChIP-seq peak to the nearest Ensemble transcripts.
 
 
 ```
@@ -36,4 +37,6 @@ do
 done
 ```
 
+
+#### II. generateH3K4me3prolifes_ENCODE.py:
 
