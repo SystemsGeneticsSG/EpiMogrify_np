@@ -9,6 +9,13 @@
 5. Use MACS2 peak caller with broad parameter to generate broad H3K4me3 profiles.
 6. Annotate the ChIP-seq peak to the nearest Ensemble transcripts.
 
+##### list of softwares
+samtools
+bwa
+run_spp.R (https://github.com/kundajelab/phantompeakqualtools)
+macs2
+bedtools
+
 
 ```
 ## Assign paths to directories
