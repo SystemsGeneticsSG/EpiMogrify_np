@@ -1,7 +1,7 @@
 ## Non proprietary codes used in this study
 
 
-#### I. generateH3K4me3prolifes_ENCODE.py:  
+### I. generateH3K4me3prolifes_ENCODE.py:  
 
 Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are:  
 1. Create analysis directory for each ENCODE experiment ID
@@ -11,7 +11,7 @@ Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are
 5. Use MACS2 peak caller with broad parameter to generate broad H3K4me3 profiles.
 6. Annotate the ChIP-seq peak to the nearest Ensemble transcripts.
 
-##### List of softwares
+#### List of softwares
 samtools  
 bwa  
 run_spp.R (https://github.com/kundajelab/phantompeakqualtools)  
@@ -49,7 +49,7 @@ done
 ```
 
 
-#### II. celltype_specific_H3K4me3profile.R  
+### II. celltype_specific_H3K4me3profile.R  
 Combines H3K4me3 profiles from different samples to generate cell-type H3K4me3 profile at the specified ChIP-seq q-value filter.  
 
 
