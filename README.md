@@ -9,7 +9,7 @@
 6. Annotate the peak to the nearest Ensemble transcripts
 
 
-
+```
 ## Assign paths to directories
 path_to_runSPP=/path_to_runSPP.R    ## Path to phantompeakqualtools directory that contains runSPP.R 
 export PATH=$PATH:$path_to_runSPP
@@ -28,12 +28,12 @@ exp_dir=$processdir/ChipSeq_Encode/H3K4me3Encode                # directory cont
 control_dir=$processdir/ChipSeq_Encode/ControlEncode            # directory containing the downloaded bam files of the control ChIP-seq from ENCODE
 
 
-
-## For a list of ENCODE experiment IDs as an example. ## H3K4me3_ENCODE_IDs_2017.txt contains the list of ENCODE experiments ids used in this study  
+## H3K4me3_ENCODE_IDs_2017.txt contains the list of ENCODE experiments ids used in this study  
+## For a list of ENCODE experiment IDs as an example. 
 for experiment_id in ["ENCSR662PLB", "ENCSR000DTK", "ENCSR000DQH", "ENCSR000DUJ", "ENCSR000DWS" ]:
 do  
    generateH3K4me3prolifes_ENCODE.py $ChipSeqHistonMetafile $experiment_id $reference $annotation $wrkdir $exp_dir $control_dir $PeakType
 done
-
+```
 
 
