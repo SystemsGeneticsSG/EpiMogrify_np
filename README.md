@@ -3,7 +3,7 @@
 
 ### I. generateH3K4me3prolifes_ENCODE.py:  
 
-Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are:  
+COntains the script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are:  
 1. Create analysis directory for each ENCODE experiment ID
 2. Check the presence of control ChIP-seq for the H3K4me3 ChIP-seq files. Set parameters for MACS2 peak calling software according to the control ChIP-seq information.
 3. Check if the control sample is already mapped to hg38 genome orelse remap the control bam files to hg38 genome.
@@ -11,7 +11,7 @@ Script to generate H3K4me3 peak profiles from ENCODE bam files and the steps are
 5. Use MACS2 peak caller with broad parameter to generate broad H3K4me3 profiles.
 6. Annotate the ChIP-seq peak to the nearest Ensemble transcripts.
 
-#### List of softwares
+#### List of softwares used
 samtools  
 bwa  
 run_spp.R (https://github.com/kundajelab/phantompeakqualtools)  
