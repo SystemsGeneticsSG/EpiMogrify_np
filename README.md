@@ -1,6 +1,6 @@
 ## Scripts used in this study
 
-i) Proprietary codes: If you are interested in using EpiMogrify proprietary codes to prioritize cell identity, cell maintenance and cell conversion factors, please contact us at owen.rackham@duke-nus.edu.sg .
+i) Proprietary codes: If you are interested in using EpiMogrify proprietary codes to prioritize cell identity, cell maintenance and cell conversion factors, please contact us at owen.rackham@duke-nus.edu.sg .  
 ii) Non proprietary codes: Please see below for the non-proprietary codes which contains scripts for generating cell-type H3K4me3 profile from ENCODE data. 
 
 ### I. generateH3K4me3prolifes_ENCODE.py:  
