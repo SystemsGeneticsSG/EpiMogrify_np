@@ -54,5 +54,22 @@ done
 ### II. celltype_H3K4me3profile.R  
 Combines H3K4me3 profiles from different samples to generate cell-type H3K4me3 profile at the specified ChIP-seq q-value filter.  
 
+R script:
+```
+## set directories
+hmdir="path"
+
+peakdir = paste0(hmdir, "/path_to_H3K4me3peakfiles/")
+resdir = paste0(hmdir, "/path_to_Resultdir")
+
+celltypes = c("primary_cell__astrocytes", "primary_cell__cardiac_muscle_cell", "stem_cell__H9")
+qValue_cutoff = 5 ## -log10 pvalue = 10^-5
+
+dir.create(resdir)
+
+
+## Merge samples in each celltype. The union of broad peaks across samples are generated.
+celltype_unionprofile(peakdir, resdir, celltypes, qValue_cutoff)
+```
 
 
