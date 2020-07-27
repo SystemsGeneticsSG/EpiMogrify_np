@@ -63,7 +63,7 @@ peakdir = paste0(hmdir, "/path_to_H3K4me3peakfiles/")
 resdir = paste0(hmdir, "/path_to_Resultdir")
 
 celltypes = c("primary_cell__astrocytes", "primary_cell__cardiac_muscle_cell", "stem_cell__H9")
-qValue_cutoff = 5 ## -log10 pvalue = 10^-5
+qValue_cutoff = 5 ## -log10 pvalue (10^-5)
 
 dir.create(resdir)
 
